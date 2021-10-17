@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activite 7-2</title>
+    <script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+</head>
+<body>
+    
+    <div id="root"></div>
+
+    <script type="text/babel">
+        class App extends React.Component{
+            constructor(props){
+                super(props)
+                this.state ={
+                    msg:"Veuillez vous inscrire",
+                    ins:"Inscription"
+                }
+            }
+            style={
+                fontStyle:"bold",
+                color:"teal"
+            }
+            Changement = () =>{
+                this.setState(
+                    {
+                        msg : "Suivez les maj",
+                        ins :"Deja inscrit"
+                    }
+                )
+            }
+            render(){
+                return <div>
+                        <h1 style={this.style}>{this.state.msg}</h1>
+                        <button onClick={this.Changement}>{this.state.ins}</button>
+                    </div>
+            }
+        }
+        ReactDOM.render(<App/> , document.getElementById("root"));
+    </script>
+</body>
+</html>
