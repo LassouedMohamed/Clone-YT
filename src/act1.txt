@@ -1,0 +1,15 @@
+
+//chp 4 activite 1
+import './App.css';
+
+function App() {
+  const fruits=['Apple','Ananas','Watermelon','Pear'];
+    const mapf = fruits.map(x => <p>{x}</p> );
+  return (
+    <div>
+        {mapf}
+    </div>
+  );
+}
+
+export default App;
