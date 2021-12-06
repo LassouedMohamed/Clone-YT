@@ -1,0 +1,19 @@
+import './App.css';
+
+
+//chp 4 activite 2
+
+function App() {
+  const films=[{id : "1" , nom : "Fausse note"},
+  {id : "2" , nom : "L'enfant du soleil"},
+  {id : "3" , nom : "El jadida"},
+  {id : "4" , nom : "Dachra"}];
+  const mapf = films.map((n) => <li>{n.id}. {n.nom}</li> );
+  return (
+    <div>
+        {mapf}
+    </div>
+  );
+}
+
+export default App;
