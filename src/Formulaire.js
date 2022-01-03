@@ -6,7 +6,7 @@ class Formulaire extends Component {
         super(props)
         this.state={
              nomcomplet: " ",
-             check : " ",
+             check : "vide",
              comm : " "
         };
     }
